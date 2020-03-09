@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="./icone.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -24,12 +24,141 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158292553-1"></script>
+    <title>Minha página</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <!--- Navegação --->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Perfil Dev</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Conversor</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Desenvolvedor</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158292553-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+  
+        gtag('config', 'UA-158292553-1');
+      </script>
     
+    </header>
+    
+    <!-- About Section -->
+    <section class="page-section bg-primary text-white mb-0" id="about">
+        <div class="container">
+    
+          <!-- About Section Heading -->
+          <h2 class="page-section-heading text-center text-uppercase text-white">Sobre mim</h2>
+    
+          <!-- Icon Divider -->
+          <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="divider-custom-line"></div>
+          </div>
+    
+          <!-- About Section Content -->
+          <div class="row">
+            <div class="col-lg-4 ml-auto">
+              <p class="lead"><b>Lucas Augusto Grisolia de Assis</b>, natural de Cuiabá, gosto de esportes, e-sports, tecnologia e música.</p>
+            </div>
+            <div class="col-lg-4 mr-auto">
+              <p class="lead">Descobri na faculdade de Engenharia da Computação que com a ideia de poder codar em qualquer lugar, eu poderia realizar um dos meus maiores sonhos que é poder viajar pra todo canto do mundo, desde então, entrar na área de desenvolvimento tem sido o meu objetivo.
+                 Pra que eu pudesse realizer meu sonho, me mudei pra São Paulo pra fazer um curso da área na Arbyte.</p><br>
+            </p>
+            </div>
+          </div>
+    
+        </div>
+    </section>
+    
+    <!-- Portfolio Section -->
+    <section class="page-section portfolio" id="portfolio">
+      <div class="container">
+  
+        <div id="root"></div>
+        
+      </div>
+    </section>
+  
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+  
+          <!-- Footer Location -->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Endereço</h4>
+            <p class="lead mb-0">Rua Capitão Macedo, 232
+              <br>São Paulo, SP - 04021-020</p>
+          </div>
+  
+          <!-- Footer Social Icons -->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Redes sociais</h4>
+            <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/lucas.assis.7311?ref=bookmarks" target="_blank">
+              <i class="fab fa-fw fa-facebook-f"></i>
+            </a>
+            <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/LucasGrisolia1" target="_blank">
+              <i class="fab fa-fw fa-twitter"></i>
+            </a>
+            <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/lucas-assis-235b73199/" target="_blank">
+              <i class="fab fa-fw fa-linkedin-in"></i>
+            <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/lucasassis0/" target="_blank">
+              <i class="fab fa-fw fa-github-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+    <!-- Copyright Section -->
+    <section class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small>Copyright &copy; Lucas Assis, 2020</small>
+      </div>
+    </section>
+  
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>    
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+  
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
     
   </body>
 </html>

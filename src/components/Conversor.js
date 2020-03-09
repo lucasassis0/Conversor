@@ -1,4 +1,5 @@
-import React, { Component, useDebugValue } from 'react'
+import React, { Component } from 'react'
+import './Conversor.css'
 
 export default class Conversor extends Component {
     
@@ -14,8 +15,8 @@ export default class Conversor extends Component {
     }
     
     converter(){
-        let de_para = `${this.props.moedaA}-${this.props.moedaB}`
-        let url = `https://economia.awesomeapi.com.br/all/${de_para}`
+        let de_para = `${this.props.moedaA}_${this.props.moedaB}`
+        let url = `https://free.currconv.com/api/v7/convert?apiKey=do-not-use-this-key&q=${de_para}&compact=y`
     
         fetch(url)
         .then(res=>{
@@ -23,7 +24,7 @@ export default class Conversor extends Component {
         })
 
         .then(json=>{
-            let cotacao = json[de_para].bid;
+            let cotacao = json[de_para].val;
             let moedaB_valor = (parseFloat(this.state.moedaA_valor) * cotacao).toFixed(2)
             this.setState({moedaB_valor})
         })
