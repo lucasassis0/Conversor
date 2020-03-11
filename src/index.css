@@ -13,12 +13,21 @@ code {
     monospace;
 }
 
-.navbar ul {
+.navbar{
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333333;
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  font-size: 1.25rem;
+  white-space: nowrap;
+  color: #ffffff;
 }
 
 .navbar li {
@@ -61,4 +70,21 @@ code {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+}
+
+.container{
+    box-shadow: 0px 9px 150px 0px rgba(128,128,128,0.7);
+    -webkit-box-shadow: 0px 9px 150px 0px rgba(128,128,128,0.7);
+    -moz-box-shadow: 0px 9px 150px 0px rgba(128,128,128,0.7);
+}
+
+.about-section,
+.footer,
+.copyright,
+.navbar,
+.portfolio{
+  text-align: center;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
 }
