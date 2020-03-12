@@ -18,9 +18,10 @@ code {
   text-align: right;
   background-color:  rgba(128, 128, 128, 0.7);
   height: 36px;
-  width: 640px;
+  width: 80%;
   padding: 20px;
-  margin: auto;
+  position: fixed;
+  margin-left: 8.5%;
 }
 
 .navbar-brand {
@@ -32,13 +33,30 @@ code {
   top: 20px;
 }
 
+.home-img{
+  text-align: center;
+}
+
 .link-home{
   float: left;
 }
+
+.link-home:link{
+  color: #ffffff;
+}
+
+.link-home:visited{
+  color: white;
+}
+
+.link-home:hover{
+  color: #000000;
+}
+
 .link-conversor,
 .link-about{
   display: inline-block;
-  top: 500px;
+  
 }
 
 .link-conversor,
@@ -47,6 +65,30 @@ code {
   text-align: right;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+.link-about:link{
+  color: #ffffff;
+}
+
+.link-about:visited{
+  color: white;
+}
+
+.link-about:hover{
+  color: #000000;
+}
+
+.link-conversor:link{
+  color: #ffffff;
+}
+
+.link-conversor:visited{
+  color: white;
+}
+
+.link-conversor:hover{
+  color: #000000;
 }
 
 .navbar-nav {
@@ -103,6 +145,48 @@ code {
   box-shadow: 0px 9px 150px 0px rgba(128,128,128,0.7);
     -webkit-box-shadow: 0px 9px 150px 0px rgba(128,128,128,0.7);
     -moz-box-shadow: 0px 9px 150px 0px rgba(128,128,128,0.7);
+}
+
+.img-linkedin{
+  border-radius: 50px;
+}
+
+.img-github{
+  border-radius: 50px;
+}
+
+.link-linkedin{
+  padding: 10px;
+  text-decoration: none;
+}
+
+.link-linkedin:link{
+  color: #ffffff;
+}
+
+.link-linkedin:visited{
+  color: blue;
+}
+
+.link-linkedin:hover{
+  color: #ffffff;
+}
+
+.link-github:link{
+  color: #000000;
+}
+
+.link-github:visited{
+  color: #000000;
+}
+
+.link-github:hover{
+  color: #ffffff;
+}
+
+.link-github{
+  padding: 10px;
+  text-decoration: none;
 }
 
 .text-uppercase{
