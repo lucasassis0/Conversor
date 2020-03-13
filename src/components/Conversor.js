@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import './Conversor.css'
 
+var api_key = 'fef84c2676633f22089b'
+
 export default class Conversor extends Component {
     
     constructor(props){
@@ -14,7 +16,7 @@ export default class Conversor extends Component {
         this.converter = this.converter.bind(this)
     }
     
-    converter(){
+    converter(a){
         var strValor = this.state.moedaA_valor.split("")
 
         for (let x = 0; x < strValor.length; x++) {
@@ -33,7 +35,7 @@ export default class Conversor extends Component {
 
         if (valconv >= 0) {
             let de_para = `${this.props.moedaA}_${this.props.moedaB}`
-            let url = `https://free.currconv.com/api/v7/convert?apiKey=do-not-use-this-key&q=${de_para}&compact=y`
+            let url = `https://free.currconv.com/api/v7/convert?apiKey=${api_key}&q=${de_para}&compact=y`
 
             fetch(url)
             .then(res=>{
@@ -58,28 +60,9 @@ export default class Conversor extends Component {
             <h2>{this.props.moedaA} para {this.props.moedaB}</h2>
             <input type="text" id="value" onChange={(event)=>{this.setState({moedaA_valor:event.target.value})}}></input>
             <input type="button" id = "submit" value="Converter" onClick={this.converter}></input>
-
             <h2>{this.state.moedaB_valor}</h2>
 
             </div>
         )
     }
 }
-
-/*var meuInput = document.getElementById('idDoSeuInput');
-var meuForm = document.getElementById('idDoSeuForm');
-
-input.onkeypress = teclaPressionada();
-
-function teclaPressionada(event) {
-    if(event.keyCode == 13) {
-        converter()
-    }
-}
-
-<script>
-                var text = getElementById("text")
-                text.addEventListener("keypress", function (evento){
-                    evento.keycode == 13 ? this.converter:0
-                })
-            </script>*/
