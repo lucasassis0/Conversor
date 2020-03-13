@@ -16,7 +16,7 @@ export default class Conversor extends Component {
         this.converter = this.converter.bind(this)
     }
     
-    converter(a){
+    converter(){
         var strValor = this.state.moedaA_valor.split("")
 
         for (let x = 0; x < strValor.length; x++) {
